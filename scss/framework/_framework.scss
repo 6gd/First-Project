@@ -1,0 +1,379 @@
+/* Start padding */
+.p-20{
+    padding: 20px;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.pl-20{
+    padding-left: 20px;
+}
+.pr-20{
+    padding-right: 20px;
+}
+.p-a{
+    padding: auto;
+}
+.pt-a{
+    padding-top: auto;
+}
+.pb-a{
+    padding-bottom: auto;
+}
+.pl-a{
+    padding-left: auto;
+}
+.pr-a{
+    padding-right: auto;
+}
+.p-40{
+    padding: 40px;
+}
+.pt-40{
+    padding-top: 40px;
+}
+.pb-40{
+    padding-bottom: 40px;
+}
+.pl-40{
+    padding-left: 40px;
+}
+.pr-40{
+    padding-right: 40px;
+}
+.p-80{
+    padding: 80px;
+}
+.pt-80{
+    padding-top: 80px;
+}
+.pb-80{
+    padding-bottom: 80px;
+}
+.pl-80{
+    padding-left: 80px;
+}
+.pr-80{
+    padding-right: 80px;
+}
+.p-100{
+    padding: 100px;
+}
+.pt-100{
+    padding-top: 100px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+.pl-100{
+    padding-left: 100px;
+}
+.pr-100{
+    padding-right: 100px;
+}
+/* End padding */
+
+/* Start margin */
+
+.m-20{
+    margin: 20px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.ml-20{
+    margin-left: 20px;
+}
+.mr-20{
+    margin-right: 20px;
+}
+.m-40{
+    margin: 40px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.ml-40{
+    margin-left: 40px;
+}
+.mr-40{
+    margin-right: 40px;
+}
+.m-80{
+    margin: 80px;
+}
+.mt-80{
+    margin-top: 80px;
+}
+.mb-80{
+    margin-bottom: 80px;
+}
+.ml-80{
+    margin-left: 80px;
+}
+.mr-80{
+    margin-right: 80px;
+}
+.m-100{
+    margin: 100px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.ml-100{
+    margin-left: 100px;
+}
+.mr-100{
+    margin-right: 100px;
+}
+
+// ##################
+
+.m-a{
+    margin: auto;
+}
+.mt-a{
+    margin-top: auto;
+}
+.mb-a{
+    margin-bottom: auto;
+}
+.ml-a{
+    margin-left: auto;
+}
+.mr-a{
+    margin-right: auto;
+}
+
+
+
+
+/* End margin */
+/*Start position */
+
+.po-rel{
+    position: relative;
+}
+.po-abs{
+    position: absolute;
+}
+.po-fix{
+    position: fixed;
+}
+.po-sti{
+    position: sticky;
+}
+.po-sta{
+    position: static;
+}
+/* End Position */
+
+/* Start Color */
+.c-black{
+    color: black;
+}
+.c-white{
+    color: white;
+}
+.c-red{
+    color: red;
+}
+.c-blue{
+    color: blue;
+}
+.c-green{
+    color: green;
+}
+/* End Color */
+/* Background */
+.bg-black{
+    background: black;
+}
+.bg-white{
+    background: white;
+}
+.bg-red{
+    background: red;
+}
+.bg-blue{
+    background: blue;
+}
+.bg-green{
+    background: green;
+}
+/* END Background */
+/* Start Tools Position */
+.t-20{
+    top: 20px;
+}
+.l-20{
+    left: 20px;
+}
+.r-20{
+    right: 20px;
+}
+.b-20{
+    bottom: 20px;
+}
+.t-40{
+    top: 40px;
+}
+.l-40{
+    left: 40px;
+}
+.r-40{
+    right: 40px;
+}
+.b-40{
+    bottom: 40px;
+}
+.t-80{
+    top: 80px;
+}
+.l-80{
+    left: 80px;
+}
+.r-80{
+    right: 80px;
+}
+.b-80{
+    bottom: 80px;
+}
+.t-100{
+    top: 100px;
+}
+.l-100{
+    left: 100px;
+}
+.r-100{
+    right: 100px;
+}
+.b-100{
+    bottom: 100px;
+}
+/* End Tools Position */ 
+/* Start Display */
+.d-flex{
+    display: flex;
+}
+.d-block{
+    display: block;
+}
+.d-inline{
+    display: inline;
+}
+.d-grid{
+    display: grid;
+}
+.d-inline-b{
+    display: inline-block;
+}
+.d-list{
+    display: list-item;
+}
+.d-inline-f{
+    display: inline-flex;
+}
+.d-table{
+    display: table;
+}
+.d-inline-g{
+    display: inline-grid;
+}
+.d-none{
+    display: none;
+}
+/* End display */ 
+/* Start ohter Tools */
+.align-center{
+    align-items: center;
+}
+.align-center-s{
+    align-self: center;
+}
+.ju-c-c{
+    justify-content: center;
+}
+.ju-c-f-s{
+    justify-content: flex-start;
+}
+.ju-c-f-e{
+    justify-content: flex-end;
+}
+.ju-s-c{
+    justify-self: center;
+}
+
+.o-0{
+    opacity: 0;
+}
+.o-1{
+    opacity: 1;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-start{
+    text-align:start;
+}
+
+.text-end{
+    text-align:end;
+}
+
+.text-d-n{
+    text-decoration: none;
+}
+.text-d-u{
+    text-decoration: underline;
+}
+
+.z-index-a{
+    z-index: auto;
+}
+.z-index-10{
+    z-index: 10;
+}
+.z-index-100{
+    z-index: 100;
+}
+.z-index-1000{
+    z-index: 1000;
+}
+.z-index-10000{
+    z-index: 10000;
+}
+.z-index-100000{
+    z-index: 100000;
+}
+/* End ohter Tools */
+/* Start border */
+.border-r-16{
+    border-radius: 16px;
+}
+.border-r-26{
+    border-radius: 26px;
+}
+.border-r-36{
+    border-radius: 36px;
+}
+.border-r-46{
+    border-radius: 46px;
+}
+.border-r-c{
+    border-radius: 50%;
+}
+/* End Border */
