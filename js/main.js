@@ -5,31 +5,8 @@ let nav_links = document.querySelector(".nav-links");
 let button_login = $('.button-login');
 let home = document.querySelectorAll(".nav-list li a");
 let liDown = document.querySelectorAll(".nav-list li");
-gsap.registerPlugin(ScrollTrigger,TextPlugin,ScrollToPlugin);
-// gsap.registerPlugin(TextPlugin);
-// var tl = gsap.timeline({
-//     defaults: { duration: 0.75, ease: "Power3.easeOut" },
-// });
-// new fullpage('#fullpage',{
-//     autoScrolling: true,
-//     navigation: true,
-    
+gsap.registerPlugin(ScrollTrigger,TextPlugin);
 
-// })
-
-
-class User {
-    static count = 0;
-    constructor(id, username, salary) {
-        this.i = id;
-        this.u = username;
-        this.s = salary;
-    }
-}
-
-let userOne = new User(100,'Mahdi',5642);
-
-console.log(userOne.constructor == User);
 
 let el = document.querySelector(".scroller");
 let height = document.documentElement.scrollHeight -  document.documentElement.clientHeight;
@@ -47,7 +24,6 @@ function add(product){
         
     }else{
         productsInCart.push(product.getAttribute("data-product"))
-        console.log(productsInCart)
     }
     
 }
@@ -167,7 +143,6 @@ const container_Pro = document.querySelector("#Products .container-fluid");
 
 const n = 4;
 for (let i = 0; i <= n; i++) {
-    console.log(products[i]);
     container_Pro.innerHTML += `<div class="card div${i+1}" data-num="${i+1}" onclick="card(this)">
     <img class="card-img-top" src="${products[i].imageUrl}" loading="lazy" alt="">
     <div class="card-body">
@@ -182,25 +157,6 @@ for (let i = 0; i <= n; i++) {
 }
 
 
-// products.forEach(product => {
-//     console.log(product)
-//     container_Pro.innerHTML += `<div class="card" data-num="${product.id}" onclick="card(this)">
-//     <img class="card-img-top" src="${product.imageUrl}" loading="lazy" alt="">
-//     <div class="card-body">
-//     <h4 class="card-title">${product.title}</h4>
-//     <p class="card-text">Delivery Free</p>
-    
-//     <div class="box-Price">
-//         <span class="fake-price">$300.00</span>
-//         <span class="real-price">$${product.Price}</span>
-//     </div>
-//     <div class="box-buy">
-//         <button class="add-to-cart" onclick="add(this)" ><i class="fa-duotone fa-cart-plus"></i></button>
-//         <button class="Buy-now">Buy Now</button>
-//     </div>
-//     </div>
-//     </div>`
-// })
 
 $(document).ready(function(){
     $("#cart").click(() => {
@@ -252,28 +208,6 @@ $(document).ready(function(){
     });
 
 
-    // const container_Pro = $("#Products .container")[0]
-    
-    // const n = 11;
-    // for (let i = 1; i <= n; i++) {
-
-    //     container_Pro.innerHTML += `<div class="card" data-num="${i}" onclick="card(this)">
-    //     <img class="card-img-top" src="./image/${i}.webp" loading="lazy" alt="">
-    //     <div class="card-body">
-    //     <h4 class="card-title">Fossil Heritage Automatic Brown Eco Leather Watch</h4>
-    //     <p class="card-text">Delivery Free</p>
-     
-    //     <div class="box-Price">
-    //         <span class="fake-price">$300.00</span>
-    //         <span class="real-price">$200.00</span>
-    //     </div>
-    //     <div class="box-buy">
-    //         <button class="add-to-cart" onclick="add(this)" data-Product="${i}"><i class="fa-duotone fa-cart-plus"></i></button>
-    //         <button class="Buy-now">Buy Now</button>
-    //     </div>
-    //     </div>
-    //     </div>`;
-    // }
     
     let Submit_Contact = $("#Submit-Contact")[0]
     
@@ -295,26 +229,9 @@ $(document).ready(function(){
     gsap.from('#an-Services',{
         scrollTrigger: {
             trigger:"#Services",
-            // markers:true,
             scrub:.5,
             start:"top bottom",
-            // onEnter: () => {
-            //     let text = document.getElementById("2");
-            //     text.classList.add("active");
-            // },
-            // onLeave: () =>{
-            //     let text = document.getElementById("2");
-            //     text.classList.remove("active");
-                
-            // },
-            // onEnterBack: () =>{
-            //     let text = document.getElementById("2");
-            //     text.classList.add("active");
-            // },
-            // onLeaveBack: ()=>{
-            //     let text = document.getElementById("2");
-            //     text.classList.remove("active");
-            // }
+            
 
         },
         y:-150,
@@ -327,23 +244,7 @@ $(document).ready(function(){
           //  markers:true,
             scrub:.5,
             start:"top bottom",
-            // onEnter: () => {
-            //     let text = document.getElementById("3");
-            //     text.classList.add("active");
-            // },
-            // onLeave: () =>{
-            //     let text = document.getElementById("3");
-            //     text.classList.remove("active");
-                
-            // },
-            // onEnterBack: () =>{
-            //     let text = document.getElementById("3");
-            //     text.classList.add("active");
-            // },
-            // onLeaveBack: ()=>{
-            //     let text = document.getElementById("3");
-            //     text.classList.remove("active");
-            // }
+            
         },
         y:-150,
         duration:2.5,
@@ -352,7 +253,6 @@ $(document).ready(function(){
     gsap.from('.div1',{
         scrollTrigger: {
             trigger:"#Products .container-fluid",
-          //  markers:true,
             start:"top bottom",
         },  
         duration:1,
@@ -363,7 +263,6 @@ $(document).ready(function(){
     gsap.from('.div2',{
         scrollTrigger: {
             trigger:"#Products .container-fluid",
-          //  markers:true,
             start:"top bottom",
         },  
         duration:1, 
@@ -374,7 +273,6 @@ $(document).ready(function(){
     gsap.from('.div3',{
         scrollTrigger: {
             trigger:"#Products .container-fluid",
-          //  markers:true,
             start:"top bottom",
         },  
         duration:1,
@@ -385,7 +283,6 @@ $(document).ready(function(){
     gsap.from('.div4',{
         scrollTrigger: {
             trigger:"#Products .container-fluid",
-          //  markers:true,
             start:"top bottom",
         },  
         duration:1,
@@ -396,7 +293,6 @@ $(document).ready(function(){
     gsap.from('.div5',{
         scrollTrigger: {
             trigger:"#Products .container-fluid",
-          //  markers:true,
             start:"top bottom",
         },  
         duration:1,
@@ -477,23 +373,7 @@ $(document).ready(function(){
           //  markers:true,
             scrub:.5,
             start:"top bottom",
-            // onEnter: () => {
-            //     let text = document.getElementById("4");
-            //     text.classList.add("active");
-            // },
-            // onLeave: () =>{
-            //     let text = document.getElementById("4");
-            //     text.classList.remove("active");
-                
-            // },
-            // onEnterBack: () =>{
-            //     let text = document.getElementById("4");
-            //     text.classList.add("active");
-            // },
-            // onLeaveBack: ()=>{
-            //     let text = document.getElementById("4");
-            //     text.classList.remove("active");
-            // }
+            
         },
         y:-150,
         duration:2.5,
@@ -524,23 +404,7 @@ $(document).ready(function(){
           //  markers:true,
             scrub:.5,
             start:"top bottom",
-            // onEnter: () => {
-            //     let text = document.getElementById("5");
-            //     text.classList.add("active");
-            // },
-            // onLeave: () =>{
-            //     let text = document.getElementById("5");
-            //     text.classList.remove("active");
-                
-            // },
-            // onEnterBack: () =>{
-            //     let text = document.getElementById("5");
-            //     text.classList.add("active");
-            // },
-            // onLeaveBack: ()=>{
-            //     let text = document.getElementById("5");
-            //     text.classList.remove("active");
-            // }
+            
         },
         y:-150,
         duration:2.5,
